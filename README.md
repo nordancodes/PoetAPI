@@ -33,4 +33,26 @@ Page Design :
 
 
 
+CODE EXAMPLE :  
 
+$('submitbutton').on('click', function(event) {
+
+//Logic here to build URL using presence/absence of 2 author/title fields
+
+  $.ajax({
+      url : //https://poetrydb.org/ + built url from above,
+      type : "GET",
+      success : function(result){
+            Console.log(result);
+      },
+      error : function(error){
+            Console.log(error);
+      }
+  })
+  
+  
+  })
+
+
+
+}
